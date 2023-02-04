@@ -49,3 +49,11 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  .app__header > p {
+      max-height: 50px;
+      max-width: 150px;
+      overflow:hidden;
+  }
+}
