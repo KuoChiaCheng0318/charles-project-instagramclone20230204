@@ -1,0 +1,30 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarOption:hover{
+    background-color: rgb(246, 246, 246);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transform: scale(1.05); 
+    transition: transform 200ms ease-out;
+}
+
+.sidebarOption >.MuiSvgIcon-root{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.sidebarOption > h2{
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebarOption > h2 {
+        display: none;
+    }
+}

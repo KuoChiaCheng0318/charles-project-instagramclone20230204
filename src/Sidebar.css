@@ -1,0 +1,44 @@
+.sidebar{
+    border-right: 1px solid lightgray;
+    background-color: white;
+    min-width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: flex-start;   /*!!!!! to allow sidebar sticky to top*/  
+    position: sticky;
+    top: 95px;
+    height: 85vh;
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        min-width: 50px;
+        margin-left: 0;
+    }
+}
+
+.sidebar__user{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.sidebar__user >Avatar{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.sidebar__user >h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .sidebar__user > h3 {
+        display: none;
+    }
+}
+
